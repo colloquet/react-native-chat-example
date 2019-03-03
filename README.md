@@ -29,7 +29,7 @@ A simple example of how to build a chat interface using React Native. With suppo
 - Or run from XCode or Android studio.
 
 ### Note for Android users
-- You need to replace the Google Map API key in `/android/app/src/main/AndroidManifest.xml` for maps to work on Android.
+- You need to replace the Google Map API key in `/android/app/src/main/AndroidManifest.xml` for maps to work on Android. (see https://github.com/react-native-community/react-native-maps/blob/master/docs/installation.md#troubleshooting)
 - You will have to add this line `implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"`  to `/node_modules/react-native-maps/lib/android/build.gradle`. (see https://github.com/react-native-community/react-native-maps/issues/2695)
 
 ## Used Libraries
