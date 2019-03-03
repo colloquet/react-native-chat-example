@@ -1,5 +1,6 @@
 import React from 'react';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { ActionSheetProvider } from '@expo/react-native-action-sheet';
 
 import RoomListScreen from './screens/RoomListScreen';
 import RoomScreen from './screens/RoomScreen';
@@ -19,4 +20,16 @@ const AppNavigator = createStackNavigator(
   },
 );
 
-export default createAppContainer(AppNavigator);
+const AppContainer = createAppContainer(AppNavigator);
+
+class App extends React.Component {
+  render() {
+    return (
+      <ActionSheetProvider>
+        <AppContainer />
+      </ActionSheetProvider>
+    );
+  }
+}
+
+export default App;

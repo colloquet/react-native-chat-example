@@ -1,7 +1,8 @@
 import React from 'react';
-import { KeyboardAvoidingView, ActionSheetIOS, FlatList, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { KeyboardAvoidingView, FlatList, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import ImagePicker from 'react-native-image-crop-picker';
 import Icon from 'react-native-vector-icons/Feather';
+import { connectActionSheet } from '@expo/react-native-action-sheet';
 
 import ChatFooter from '../components/ChatFooter';
 import MessageItem from '../components/MessageItem';
@@ -130,9 +131,15 @@ class RoomScreen extends React.Component {
   };
 
   handleShowActionSheet = () => {
-    ActionSheetIOS.showActionSheetWithOptions(
+    this.props.showActionSheetWithOptions(
       {
         options: ['Location', 'Photo Library', 'Camera', 'Cancel'],
+        icons: [
+          <Icon name="map-pin" size={24} />,
+          <Icon name="image" size={24} />,
+          <Icon name="camera" size={24} />,
+          <Icon name="x" size={24} />,
+        ],
         cancelButtonIndex: 3,
       },
       buttonIndex => {
@@ -241,4 +248,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default RoomScreen;
+export default connectActionSheet(RoomScreen);
