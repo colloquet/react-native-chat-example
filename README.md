@@ -1,15 +1,15 @@
 # 💬 React Native Chat Example
 A simple example of how to build a chat interface using React Native. With support for image and location messages.
 
-## Room List Screen
-|iOS|Android|
---- | ---
-|![iOS Room List Screen](https://img.eservice-hk.net/upload/2019/03/03/190002_1e0dd8da18e3d6b5ea804e3095f73e85.png)|![Android Room List Screen](https://img.eservice-hk.net/upload/2019/03/03/190006_c9c86cc406e0c7fcb472324064abb76e.png)|
-
 ## Room Screen
 |iOS|Android|
 --- | ---
 |![iOS Room Screen](https://img.eservice-hk.net/upload/2019/03/03/190004_d28787b7a81ac478349bf40f498ac90c.png)|![Android Room Screen](https://img.eservice-hk.net/upload/2019/03/03/190006_3200a92519f104bc935bda8fe1c16767.png)|
+
+## Room List Screen
+|iOS|Android|
+--- | ---
+|![iOS Room List Screen](https://img.eservice-hk.net/upload/2019/03/03/190002_1e0dd8da18e3d6b5ea804e3095f73e85.png)|![Android Room List Screen](https://img.eservice-hk.net/upload/2019/03/03/190006_c9c86cc406e0c7fcb472324064abb76e.png)|
 
 ## Message Schema
 ```
